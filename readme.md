@@ -16,5 +16,9 @@ to debug the problem again.
 
 `curl https://raw.githubusercontent.com/pydo/container-debug-script/master/main.sh | sh`
 
+or
+
+`curl -L https://dbgutils.devon.ninja | sh`
+
 The script will automatically detect your distro and install the correct network/OS related utilities
 
