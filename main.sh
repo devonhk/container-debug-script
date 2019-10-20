@@ -17,7 +17,8 @@ install_debian()
     mtr \
     iproute2 \
     inotify-tools \
-    tcpdump
+    tcpdump \
+    tshark
 }
 
 install_amazon_linux2()
@@ -30,7 +31,8 @@ install_amazon_linux2()
     mtr \
     iputils \
     net-tools \
-    tcpdump
+    tcpdump \
+    tshark
 }
 
 install_alpine()
@@ -45,7 +47,8 @@ install_alpine()
     iputils \
     mtr \
     bind-tools \
-    tcpdump
+    tcpdump \
+    tshark
 }
 
 
