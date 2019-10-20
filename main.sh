@@ -16,7 +16,8 @@ install_debian()
     dnsutils \
     mtr \
     iproute2 \
-    inotify-tools
+    inotify-tools \
+    tcpdump
 }
 
 install_amazon_linux2()
@@ -28,7 +29,8 @@ install_amazon_linux2()
     man \
     mtr \
     iputils \
-    net-tools
+    net-tools \
+    tcpdump
 }
 
 install_alpine()
@@ -42,7 +44,8 @@ install_alpine()
     nmap-ncat \
     iputils \
     mtr \
-    bind-tools
+    bind-tools \
+    tcpdump
 }
 
 
