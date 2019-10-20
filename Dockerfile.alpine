@@ -1,0 +1,7 @@
+FROM alpine:latest
+
+
+COPY main.sh .
+RUN /bin/sh main.sh
+
+

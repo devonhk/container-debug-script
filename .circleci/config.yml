@@ -1,0 +1,29 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: circleci/python
+
+    steps:
+      - checkout
+      - setup_remote_docker
+
+      - run:
+          name: Build and test that the script works with various linux distros
+          command: |
+            bash tests.sh
+
+workflows:
+  version: 2
+  commit-workflow:
+    jobs:
+      - build
+  weekly-workflow:
+    triggers:
+      - schedule:
+          cron: "0 2 * * 1"  # scheduled weekly
+          filters:
+            branches:
+              only: master
+    jobs:
+      - build  

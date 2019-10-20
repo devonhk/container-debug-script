@@ -1,0 +1,7 @@
+FROM ubuntu:latest
+
+
+COPY main.sh .
+RUN /bin/sh main.sh
+
+

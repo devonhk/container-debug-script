@@ -1,0 +1,7 @@
+FROM amazonlinux:1
+
+
+COPY main.sh .
+RUN /bin/sh main.sh
+
+
